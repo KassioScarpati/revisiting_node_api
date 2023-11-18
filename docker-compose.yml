@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  revisiting_node_api:
+    tty: true
+    stdin_open: true
+    restart: always
+    env_file: .env
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+    ports:
+      - 3000:3000

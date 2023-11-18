@@ -12,4 +12,4 @@ COPY . .
 
 RUN npm run build
 
-CMD npm run setup:prod && npm start
+CMD npm start
